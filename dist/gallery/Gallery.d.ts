@@ -1,2 +1,7 @@
 import React from "react";
-export declare const Gallery: () => React.JSX.Element;
+import { GalleryDescriptionWithPath } from "./types";
+interface GalleryProps {
+    gallery: GalleryDescriptionWithPath;
+}
+export declare const Gallery: ({ gallery }: GalleryProps) => React.JSX.Element;
+export {};
